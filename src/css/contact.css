@@ -1,0 +1,110 @@
+section {
+background-color: #011f2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Main box */
+.contact {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px aqua;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background: #012a3d;
+  border-radius: 10px;
+}
+
+/* Heading */
+.heading {
+  color: white;
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.heading span {
+  color: aqua;
+}
+
+/* Subheading */
+h4 {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Contact info */
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;   /* Important for mobile */
+}
+
+.info .child1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row; /* icon left - text right */
+}
+
+.info span {
+  color: white;
+  font-size: 18px;
+}
+
+/* Social icons */
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.icons img {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px aqua;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .info {
+    flex-direction: column;  /* stack vertically on mobile */
+    gap: 20px;
+  }
+
+  .info span {
+    font-size: 16px;
+  }
+
+  .icons img {
+    height: 32px;
+    width: 32px;
+  }
+}

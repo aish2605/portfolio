@@ -1,0 +1,298 @@
+
+section{
+    display: flex;
+    flex-direction: row;
+    background-color: #011f2e;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+   
+    
+
+}
+.sub-title{
+    color:white;
+    font-size: 60px;
+    align-items: center;
+    background-color: #011f2e;
+    justify-items: center;
+ text-align: center;
+
+}
+.sub-title span{
+    color:aqua;
+    font-size: 60px;
+}
+.container1{
+    width:600px;
+    height:500px;
+    padding:75px 90px;
+    margin-left: 120px;
+    margin-bottom: 140px;
+}
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.bar{
+    font-size: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-items: flex-start;
+   text-align: left;
+}
+.technical-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   column-gap: 60px;
+   row-gap: 20px;
+}
+.technical-bar .bar{
+       margin: 20px 0;
+}
+.technical-bar .bar:first-child{
+    margin-top: 0;
+}
+.technical-bar .bar:last-child{
+     margin-top: 0;
+}
+.technical-bar .bar .info{
+    margin-bottom: 5px;
+}
+.technical-bar .bar .info span{
+   font-size: 17px;
+   font-weight: 500;
+   animation: showText 0.5s 1s linear forwards;
+   opacity: 0;
+   color: aqua;
+}
+.technical-bar .bar .progress{
+    position: relative;
+    border-radius:10px ;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+
+}
+.technical-bar .bar .progress span{
+    height:100%;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+     transform: scaleX(0);
+    transform-origin: left;
+
+}
+.progress.html span{
+      width:90%
+}
+.progress.css span{
+      width:95%
+}
+
+.progress.js span{
+      width:85%
+}
+.progress.java span{
+      width:70%
+}
+.progress.reactjs span{
+      width:75%
+}
+.progress.oracle span{
+      width:70%
+}
+.progress.mysql span{
+      width:90%
+}
+.progress span::after{
+    padding: absolute;
+    padding: 1px 8px;
+    font-size: 20px;
+    color: #fefdfd;
+    font-size: 12px;
+    border-radius: 3px;
+    top:-28px;
+    right: -20px;
+    animation:showText 0.5s 1.5s linear forwards; 
+    opacity: 0;
+}
+.progress.html span::after{
+    content: "90%";
+}
+.progress.css span::after{
+    content: "60%";
+}
+.progress.js span::after{
+    content: "85%";
+}
+.progress.java span::after{
+    content: "90%";
+}
+.progress.reactjs span::after{
+    content: "90%";
+}
+.progress.oracle span::after{
+    content: "90%";
+}
+.progress.mysql span::after{
+    content: "90%";
+}
+.progress span::before{
+    content:"";
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px ;
+    border-top-color:#001017;
+    border-right-width: 0px;
+    top:-10px;
+    right:0;
+      animation:showText 0.5s 1.5s linear forwards; 
+    opacity: 0;
+}
+@keyframes showText{
+     100%{
+        opacity: 1;
+     }
+}
+.radial-bars{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    column-gap: 30px;
+    color: #fefdfd;
+    row-gap: 10px;
+
+}
+.radial-bars .radial-bar{
+  
+    width:50%;
+    height:170px;
+    margin-bottom: 10px;
+    position: relative;
+ 
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+  width:120px;
+  height: 160px;
+  padding: 10px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stop-color: #000000;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+
+}
+.path{
+    stroke-width: 10;
+    stroke: aqua;
+    fill: transparent;
+     stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1{
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2{
+    animation: animate-path2 1s 1s linear forwards;
+}
+.path-3{
+    animation: animate-path3 1s 1s linear forwards;
+}
+.path-4{
+    animation: animate-path4 1s 1s linear forwards;
+}
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards; 
+    opacity: 0; 
+}
+/* Mobile view ke liye *//* Mobile view ke liye */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;   /* niche aa jayenge */
+    height: auto;             /* scroll allow karega */
+    padding: 40px 20px;
+  }
+
+  .container1 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  .technical-bar {
+    grid-template-columns: 1fr 1fr; /* ek column me skills */
+    row-gap: 20px;
+  }
+
+  .radial-bars {
+    grid-template-columns: 1fr 1fr; /* professional skills niche aa jayenge */
+    row-gap: 30px;
+  }
+
+  .radial-bars .radial-bar {
+    width: 100%;
+    height: 200px;
+  }
+}
