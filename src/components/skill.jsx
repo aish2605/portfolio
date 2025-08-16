@@ -11,7 +11,7 @@ function skill() {
         <h1 className="heading1">Technical skill</h1>
         <div className="technical-bar">
             <div className="bar">
-                <img src="../public/html.png" width="40px" height="40px"></img>
+                <img src="/html.png" width="40px" height="40px"></img>
                 <div className="info">
                     <span>HTML</span>
                 </div>
@@ -20,7 +20,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/csss.png" width="40px" height="50px"></img>
+                <img src="/csss.png" width="40px" height="50px"></img>
                 <div className="info">
                     <span>CSS</span>
                 </div>
@@ -29,7 +29,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/javascript.png" width="40px" height="40px"></img>
+                <img src="/javascript.png" width="40px" height="40px"></img>
                 <div className="info">
                     <span>JavaScript</span>
                 </div>
@@ -38,7 +38,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/java.png" width="40px" height="40px" ></img>
+                <img src="/java.png" width="40px" height="40px" ></img>
                 <div className="info">
                     <span>Java</span>
                 </div>
@@ -47,7 +47,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/reactjs.png" width="40px" height="40px"></img>
+                <img src="/reactjs.png" width="40px" height="40px"></img>
                 <div className="info">
                     <span>ReactJS</span>
                 </div>
@@ -56,7 +56,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/oracle.png" width="40px" height="40px"></img>
+                <img src="/oracle.png" width="40px" height="40px"></img>
                 <div className="info">
                     <span>Oracle</span>
                 </div>
@@ -65,7 +65,7 @@ function skill() {
                    </div>
             </div>
             <div className="bar">
-                <img src="../public/mysql.png" width="40px" height="40px"></img>
+                <img src="/mysql.png" width="40px" height="40px"></img>
                 <div className="info">
                     <span>MySQL</span>
                 </div>

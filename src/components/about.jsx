@@ -8,7 +8,7 @@ function about() {
     <div className="about">
       
       <div className="about-img">
-        <img src="../public/selfphoto.jpg" height="300px" width="300px"></img>
+        <img src="/selfphoto.jpg" height="300px" width="300px"></img>
       </div>
       <div className="about-text">
         

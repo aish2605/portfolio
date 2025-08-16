@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 function home() {
 
   const openPdf = () => {
-    window.open("../public/download-resume.pdf", "_blank");  // PDF new tab me open hoga
+    window.open("/download-resume.pdf", "_blank");  
   };
   return (
       <>
@@ -30,7 +30,7 @@ function home() {
         
       
        <div className="image">
-          <img src="../public/selfphoto.jpg" height="300px" width="300px"></img>
+          <img src="/selfphoto.jpg" height="300px" width="300px"></img>
         </div>
       
         </div>

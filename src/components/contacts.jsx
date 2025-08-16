@@ -12,11 +12,11 @@ function contacts() {
    
     <div className="info">
       <div className='child1'>
-        <img src="../public/call.webp" height="40px" width="40px"></img>
+        <img src="/call.webp" height="40px" width="40px"></img>
     <span>7620833506</span>
       </div>
       <div className='child1'>
-        <img src="../public/mail.png" height="40px" width="40px"></img>
+        <img src="/mail.png" height="40px" width="40px"></img>
     <span>jadhavgaishwarya2003@gmail.com</span></div>
      
     </div>
